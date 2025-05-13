@@ -1,2 +1,0 @@
-# ADS
-Atividades de ADS

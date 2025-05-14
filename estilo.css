@@ -1,0 +1,104 @@
+.imagemlivro{
+    width: 700px;       
+    height: 400px; 
+    max-width: 100%;
+    border-image-slice: 20;
+    position: relative; 
+    left: 40%;
+    margin-top: 40px;
+    border-radius: 10px
+}
+
+.alternada {
+    text-align: center;
+    font-size: 50px;
+    width: 500px;
+    margin: auto;
+    padding-left: 50px;
+}
+
+.alternada li:hover {
+    font-weight: bolder;
+    background-color: brown;
+    text-align: center;
+    list-style-type: circle;
+    margin-bottom: 20px;
+    
+}
+
+.segundotitulo{
+    font-size: 80px;
+}
+
+.terceirotitulo{
+    font-size: 80px;
+}
+
+body{background-color: rgb(246, 195, 195) 
+
+}
+.texto-justificado{
+    text-align: justify;
+    font-size: 40px;
+}
+
+.outrotitulo{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+
+}
+
+.tabelaestilizada{
+    font-size: 70px;
+    width: 50%; 
+    margin: 0 auto; 
+    border-collapse: collapse;
+}
+
+.tabelaestilizada  th, td {
+    border: 10px solid rgb(148, 9, 9); 
+    padding: 20px; 
+    text-align: center;
+}
+
+.linkestilizado{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.linkestilizado :hover{
+    color:darkred;
+}
+
+#mensagem {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+    border-radius: 4px;
+}
+
+
+#mensagem.mostrar {
+    opacity: 1; /* Torna visível */
+    font-size: 30px;
+    text-align: center;
+}
+
+#botao {
+    width: 600px;       
+    height: 100px; 
+    max-width: 100%;
+    position: relative; 
+    left: 40%;
+    font-size: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+#botao:hover {
+    background-color: red;
+}

@@ -4,14 +4,14 @@
     max-width: 100%;
     border-image-slice: 20;
     position: relative; 
-    left: 40%;
+    left: 30%;
     margin-top: 40px;
     border-radius: 10px
 }
 
 .alternada {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     width: 500px;
     margin: auto;
     padding-left: 50px;
@@ -27,11 +27,11 @@
 }
 
 .segundotitulo{
-    font-size: 80px;
+    font-size: 50px;
 }
 
 .terceirotitulo{
-    font-size: 80px;
+    font-size: 50px;
 }
 
 body{background-color: rgb(246, 195, 195) 
@@ -39,18 +39,18 @@ body{background-color: rgb(246, 195, 195)
 }
 .texto-justificado{
     text-align: justify;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .outrotitulo{
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bolder;
 
 }
 
 .tabelaestilizada{
-    font-size: 70px;
+    font-size: 60px;
     width: 50%; 
     margin: 0 auto; 
     border-collapse: collapse;
@@ -63,7 +63,7 @@ body{background-color: rgb(246, 195, 195)
 }
 
 .linkestilizado{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     font-weight: bolder;
     
@@ -82,7 +82,7 @@ body{background-color: rgb(246, 195, 195)
 
 #mensagem.mostrar {
     opacity: 1; /* Torna visível */
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -91,9 +91,9 @@ body{background-color: rgb(246, 195, 195)
     height: 100px; 
     max-width: 100%;
     position: relative; 
-    left: 40%;
-    font-size: 30px;
-    border-radius: 20px;
+    left: 30%;
+    font-size: 20px;
+    border-radius: 30px;
     font-weight: bold;
     text-align: center;
     

@@ -39,6 +39,8 @@ print("PRATOS DO DIA:\n\n"
     "FF - Filé de Frango Grande(G): R$21,00\n"
 )
 
+total = 0.0
+
 print("Gostou das opções? Então vamos começar o seu pedido...\n")
 
 while True:
@@ -70,21 +72,38 @@ while True:
         print(f"Você escolheu {sabor_escolhido} tamanho {tamanho_escolhido}!")
     else:
         print("Opção inválida. Tente novamente digitando P, M ou G.")
-
-
+    if algo_mais == "Sim":
+        continue
+    elif algo_mais == "Não":
+        break
+    else:
+        print("Opção inválida. Tente novamente digitando Sim ou Não.")
+    
 if sabor_escolhido == "BA" and tamanho_escolhido == "P":
     preco = 16.00
+    print(f"Conforme nosso Menu, {sabor_escolhido} tamanho {tamanho_escolhido} sairá no valor de R${preco}")
 if sabor_escolhido == "BA" and tamanho_escolhido == "M":
     preco = 18.00
+    print(f"Conforme nosso Menu, {sabor_escolhido} tamanho {tamanho_escolhido} sairá no valor de R${preco}")
 if sabor_escolhido == "BA" and tamanho_escolhido == "G":
     preco = 22.00
+    print(f"Conforme nosso Menu, {sabor_escolhido} tamanho {tamanho_escolhido} sairá no valor de R${preco}")
 if sabor_escolhido == "FF" and tamanho_escolhido == "P":
     preco = 15.00
+    print(f"Conforme nosso Menu, {sabor_escolhido} tamanho {tamanho_escolhido} sairá no valor de R${preco}")
 if sabor_escolhido == "FF" and tamanho_escolhido == "M":
     preco = 17.00
+    print(f"Conforme nosso Menu, {sabor_escolhido} tamanho {tamanho_escolhido} sairá no valor de R${preco}")
 if sabor_escolhido == "FF" and tamanho_escolhido == "G":
     preco = 21.00
-
+    print(f"Conforme nosso Menu, {sabor_escolhido} tamanho {tamanho_escolhido} sairá no valor de R${preco}")
+    algo_mais = input("Deseja pedir algo mais? Digite 'Sim' ou 'Não'")
+    if algo_mais == "Sim":
+        continue
+    elif algo_mais == "Não":
+        break
+    else:
+        print("Opção inválida. Tente novamente digitando Sim ou Não.")
 
 # print(f"Seu pedido de {sabor_escolhido} tamanho {tamanho_escolhido} ficou no valor total de {preco}")
 

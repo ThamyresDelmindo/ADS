@@ -28,14 +28,21 @@ L.	Deve-se apresentar na saída de console um pedido com duas opções sabores d
 
 app = "Marmitar"
 
-print(f"Seja bem vindo(a) ao {app.upper()} by Thamyres Delmindo")
+print(f"\nSeja bem vindo(a) ao {app.upper()} by Thamyres Delmindo\n")
+print("Segue abaixo nosso Menu...\n")
+print("PRATOS DO DIA:\n\n"
+    "BA - Bife Acebolado Pequeno(P): R$16,00\n"
+    "BA - Bife Acebolado Médio(M): R$18,00\n"
+    "BA - Bife Acebolado Grande(G): R$22,00\n"
+    "\nFF - Filé de Frango Pequeno(P): R$15,00\n"
+    "FF - Filé de Frango Médio(M): R$17,00\n"
+    "FF - Filé de Frango Grande(G): R$21,00\n"
+)
 
-print("Segue abaixo nosso Menu...")
-
-
+print("Gostou das opções? Então vamos começar o seu pedido...\n")
 
 while True:
-    sabores = input("Digite 'BA' para escolher Bife Acebolado ou 'FF' para escolher Filé de Frango").upper()
+    sabores = input("Digite 'BA' para escolher Bife Acebolado ou 'FF' para escolher Filé de Frango: ")
     if sabores == "BA":
         sabor_escolhido = "Bife Acebolado"
         print(f"Você escolheu {sabor_escolhido}")
@@ -48,17 +55,23 @@ while True:
         print("Opção inválida. Tente novamente digitando BA ou FF")
 
 
-continue
-tamanho = input("Digite 'P', 'M' ou 'G' para escolher entre os tamanhos Pequeno, Médio e Grande").upper()
-if tamanho == "P":
-    tamanho_escolhido = "Pequeno"
-elif tamanho == "M":
-    tamanho_escolhido = "Médio"
-elif tamanho == "G":
-    tamanho_escolhido = "Grande"
-    print(f"Você escolheu {sabor_escolhido} tamanho {tamanho_escolhido}!")
-else:
-    print("Opção inválida. Tente novamente digitando P, M ou G.")
+while True:
+    tamanho = input("Digite 'P', 'M' ou 'G' para escolher entre os tamanhos Pequeno, Médio e Grande: ")
+    if tamanho == "P":
+        tamanho_escolhido = "Pequeno"
+        print(f"Você escolheu {sabor_escolhido} tamanho {tamanho_escolhido}!")
+        break
+    elif tamanho == "M":
+        tamanho_escolhido = "Médio"
+        print(f"Você escolheu {sabor_escolhido} tamanho {tamanho_escolhido}!")
+        break
+    elif tamanho == "G":
+        tamanho_escolhido = "Grande"
+        print(f"Você escolheu {sabor_escolhido} tamanho {tamanho_escolhido}!")
+    else:
+        print("Opção inválida. Tente novamente digitando P, M ou G.")
+
+
 if sabor_escolhido == "BA" and tamanho_escolhido == "P":
     preco = 16.00
 if sabor_escolhido == "BA" and tamanho_escolhido == "M":
@@ -72,7 +85,8 @@ if sabor_escolhido == "FF" and tamanho_escolhido == "M":
 if sabor_escolhido == "FF" and tamanho_escolhido == "G":
     preco = 21.00
 
-print(f"Seu pedido de {sabor_escolhido} tamanho {tamanho_escolhido} ficou no valor total de {preco}")
+
+# print(f"Seu pedido de {sabor_escolhido} tamanho {tamanho_escolhido} ficou no valor total de {preco}")
 
 
 

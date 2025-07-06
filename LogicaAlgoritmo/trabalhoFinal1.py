@@ -1,5 +1,3 @@
-"""QUESTÃO 1 de 4"""
-
 #Criei essa variável para o caso de futuramente mudar o nome do App
 app = "Parcela Aí"
 

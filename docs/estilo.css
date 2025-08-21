@@ -15,7 +15,7 @@ assim, a tela muda como um link interno corretamente*/
 
 section { display: none; } /*Aqui garante que as sessões fiquem separadas*/
 #conteudoInicio { display: block; } /*Aqui garante que o Inicio será a tela inicial*/
-section:target { display: block; } /*Aqui identifica o clique e bloqueia a tela que foi clicada*/
+:target { display: block; } /*Aqui identifica o clique e bloqueia a tela que foi clicada*/
 body:has(:target) #conteudoInicio { display:none; } /*Garantia final do bloqueio das telas em cada link e a tela inicial como alvo*/
 
 body{

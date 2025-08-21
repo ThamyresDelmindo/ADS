@@ -1,15 +1,3 @@
-
-
-.imagens { 
-    width: 400px;       
-    height: 400px; /* altura*/
-    max-width: 100%;
-    border-image-slice: 20;
-    left: 30%;
-    margin-top: 40px;
-    border-radius: 10px
-}
-
 /*Criei essa parte para fazer a conexão dos links com target e has
 assim, a tela muda como um link interno corretamente*/
 
@@ -161,4 +149,14 @@ button {
 
 button:hover {
   background-color: #a40101;
+}
+
+.imagens { 
+    width: 400px;       
+    height: 400px; /* altura*/
+    max-width: 100%;
+    border-image-slice: 20;
+    left: 30%;
+    margin-top: 40px;
+    border-radius: 10px
 }

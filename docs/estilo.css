@@ -113,3 +113,11 @@ a:link {
 a:visited {
     color:rgb(252, 12, 12)
 }
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 20%;
+    margin: 0 auto;
+}

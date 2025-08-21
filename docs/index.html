@@ -195,10 +195,27 @@ e id unico para estilização do topo do conteiner dos botoes + no topo para est
         <h1>Que bom que chegou até aqui!</h1>
         <h3><i>Eu estou sempre desenvolvendo algo, que tal continuar acompanhando?</i></h3>
         <h4>Caso queira entrar em contato comigo, estou sempre online e disponível para falar.</h4>
-        <h4>É só escolher o melhor meio de comunicação para você.</h4>
+
+        <form class="contato" >
+            <label for="nome">Seu nome</label>
+            <input id="nome" name="nome" type="text" required>
+
+            <label for="email">Seu melhor e-mail</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="mensagem">Se apresente e entrarei em contato</label>
+            <textarea id="mensagem" name="mensagem" type="text" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+
+        <h4>Você também pode escolher o melhor meio de comunicação para você.</h4>
         <a href="https://www.linkedin.com/in/thamyres-delmindo/">LinkedIn</a><br><br>
         <a href="mailto:thamyres.delmindo22@gmail.com">thamyres.delmindo22@gmail.com</a><br><br>
         <a href="tel:+5511981884307">11981884307 - Whatsapp</a>
+
+
     </section>    
 </body>
 </html>

@@ -15,7 +15,7 @@ assim, a tela muda como um link interno corretamente*/
 
 section { display: none; } /*Aqui garante que as sessões fiquem separadas*/
 #conteudoInicio { display: block; } /*Aqui garante que o Inicio será a tela inicial*/
-:target { display: block; } /*Aqui identifica o clique e bloqueia a tela que foi clicada*/
+section:target { display: block; } /*Aqui identifica o clique e bloqueia a tela que foi clicada*/
 body:has(:target) #conteudoInicio { display:none; } /*Garantia final do bloqueio das telas em cada link e a tela inicial como alvo*/
 
 body{
@@ -120,4 +120,45 @@ a:visited {
     gap: 20px;
     max-width: 20%;
     margin: 0 auto;
+}
+
+/* Precisei criar tudo isso só para o formulário não quebrar */
+
+form {
+  max-width: 400px;          /* largura máxima */
+  margin: 0 auto;            /* centraliza na tela */
+  display: flex;
+  flex-direction: column;    /* deixa itens em coluna */
+  gap: 10px;                 /* espaço entre os campos */
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;          /* aumentar só na vertical */
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e7a4a4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a40101;
 }

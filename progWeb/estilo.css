@@ -1,0 +1,115 @@
+
+
+.imagens { 
+    width: 400px;       
+    height: 400px; /* altura*/
+    max-width: 100%;
+    border-image-slice: 20;
+    left: 30%;
+    margin-top: 40px;
+    border-radius: 10px
+}
+
+/*Criei essa parte para fazer a conexão dos links com target e has
+assim, a tela muda como um link interno corretamente*/
+
+section { display: none; } /*Aqui garante que as sessões fiquem separadas*/
+#conteudoInicio { display: block; } /*Aqui garante que o Inicio será a tela inicial*/
+:target { display: block; } /*Aqui identifica o clique e bloqueia a tela que foi clicada*/
+body:has(:target) #conteudoInicio { display:none; } /*Garantia final do bloqueio das telas em cada link e a tela inicial como alvo*/
+
+body{
+    background: #f4e0e0;
+    padding-top: 70px;
+
+}
+
+                /* Titulo */
+
+h1{
+    color: brown;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3{
+    color:burlywood;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+                 /* Introdução */
+
+
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+                 /* Paragráfos */
+
+
+.paragrafos {
+    text-align: center;
+    font-size: 25px;
+    font-family: Georgia, serif;
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+                 /*Botões/Linkáveis */
+
+.botao{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(236, 142, 142);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:rgb(236, 142, 142)
+
+}
+               /* conteiner botoes */
+
+#botoes .botao:hover {
+  background-color: rgb(137, 6, 6);
+  color: white;
+  border-color: rgb(137, 6, 6)
+}
+
+#botoes{
+    padding: 15px;
+    gap: 0; /* coloquei pra garantir a questão da distância entre os botões*/
+    background-color: rgb(236, 142, 142);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#botoes a {
+    text-decoration: none; /* tirando o sublinhado que apareceu do nada */
+    color: inherit;        /* forçando a manter as demais estilizações  */
+}
+
+a:link {
+    color:rgb(137, 6, 6)
+}
+
+a:visited {
+    color:rgb(252, 12, 12)
+}

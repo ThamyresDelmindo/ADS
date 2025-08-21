@@ -1,0 +1,18 @@
+Organizar as pastas do projeto
+estilo.css
+index.html
+imagens
+
+Pontos principais do trabalho
+1-Desenvolver um site totalmente funcional (links)
+2-Adicionar 4 links no site
+3-Hospedar o site em servidor gratuito
+
+Conteúdo do site
+1-Tema do site "Portfólio pessoal"
+2-Link 1 - "Sobre mim"
+3-Link2 - "Formação Educacional"
+4-Link3 -  "Portfólio". - Pode colocar links para outros sites que você
+tenha feito, ou com trabalhos que você tenha desenvolvido no curso em
+outras disciplinas
+5-Link4 - "Contato"

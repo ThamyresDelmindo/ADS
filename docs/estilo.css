@@ -102,17 +102,9 @@ a:visited {
     color:rgb(252, 12, 12)
 }
 
-.contato {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 20%;
-    margin: 0 auto;
-}
-
 /* Precisei criar tudo isso só para o formulário não quebrar */
 
-form {
+form.contato {
   max-width: 400px;          /* largura máxima */
   margin: 0 auto;            /* centraliza na tela */
   display: flex;
